@@ -12,8 +12,8 @@
 namespace Klipper\Module\CarrierBundle\Model;
 
 use Klipper\Component\Model\Traits\ImagePathInterface;
-use Klipper\Component\Model\Traits\NameableInterface;
 use Klipper\Component\Model\Traits\OrganizationalRequiredInterface;
+use Klipper\Component\Model\Traits\SimpleNameableInterface;
 use Klipper\Component\Model\Traits\TimestampableInterface;
 use Klipper\Contracts\Model\IdInterface;
 
@@ -25,7 +25,7 @@ use Klipper\Contracts\Model\IdInterface;
 interface CarrierInterface extends
     IdInterface,
     ImagePathInterface,
-    NameableInterface,
+    SimpleNameableInterface,
     OrganizationalRequiredInterface,
     TimestampableInterface
 {
