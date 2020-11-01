@@ -36,7 +36,7 @@ abstract class AbstractCarrier implements CarrierInterface
      *
      * @Assert\Type(type="string")
      * @Assert\Length(min="0", max="9")
-     * @Assert\Regex(pattern="/^#[0-9a-f]{8}$/i")
+     * @Assert\Regex(pattern="/^#[0-9a-f]{6,8}$/i")
      *
      * @Serializer\Expose
      */
