@@ -23,6 +23,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Account carrier model.
  *
  * @author François Pluchino <francois.pluchino@klipper.dev>
+ *
+ * @Serializer\ExclusionPolicy("all")
  */
 abstract class AbstractAccountCarrier implements AccountCarrierInterface
 {

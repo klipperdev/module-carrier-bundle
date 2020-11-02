@@ -23,6 +23,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Carrier model.
  *
  * @author François Pluchino <francois.pluchino@klipper.dev>
+ *
+ * @Serializer\ExclusionPolicy("all")
  */
 abstract class AbstractCarrier implements CarrierInterface
 {
