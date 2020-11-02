@@ -16,6 +16,7 @@ use JMS\Serializer\Annotation as Serializer;
 use Klipper\Component\Model\Traits\EnableTrait;
 use Klipper\Component\Model\Traits\OrganizationalRequiredTrait;
 use Klipper\Component\Model\Traits\TimestampableTrait;
+use Klipper\Module\PartnerBundle\Model\AccountInterface;
 use Klipper\Module\PartnerBundle\Model\Traits\AccountableRequiredTrait;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -35,13 +36,25 @@ abstract class AbstractAccountCarrier implements AccountCarrierInterface
 
     /**
      * @ORM\ManyToOne(
-     *     targetEntity="Klipper\Module\CarrierBundle\Model\CarrierInterface",
+     *     targetEntity="Klipper\Module\PartnerBundle\Model\AccountInterface",
      *     fetch="EXTRA_LAZY"
+     * )
+     *
+     * @Assert\NotNull
+     *
+     * @Serializer\Type("AssociationId")
+     * @Serializer\Expose
+     */
+    protected ?AccountInterface $account = null;
+
+    /**
+     * @ORM\ManyToOne(
+     *     targetEntity="Klipper\Module\CarrierBundle\Model\CarrierInterface",
+     *     fetch="EAGER"
      * )
      *
      * @Assert\NotBlank
      *
-     * @Serializer\Type("AssociationId")
      * @Serializer\Expose
      */
     protected ?CarrierInterface $carrier = null;

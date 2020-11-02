@@ -35,12 +35,11 @@ abstract class AbstractShipping implements ShippingInterface
     /**
      * @ORM\ManyToOne(
      *     targetEntity="Klipper\Module\CarrierBundle\Model\CarrierInterface",
-     *     fetch="EXTRA_LAZY"
+     *     fetch="EAGER"
      * )
      *
      * @Assert\NotBlank
      *
-     * @Serializer\Type("AssociationId")
      * @Serializer\Expose
      */
     protected ?CarrierInterface $carrier = null;
