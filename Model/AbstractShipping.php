@@ -48,7 +48,7 @@ abstract class AbstractShipping implements ShippingInterface
      * @ORM\Column(type="string", length=255, nullable=true)
      *
      * @Assert\Type(type="string")
-     * @Assert\Length(min="0", max="255")
+     * @Assert\Length(min=0, max=255)
      * @Assert\NotBlank
      *
      * @Serializer\Expose
