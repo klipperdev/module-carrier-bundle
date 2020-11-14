@@ -1,0 +1,15 @@
+# Carrier
+carrier.name: Transporteur
+carrier.name.plural: Transporteurs
+carrier.fields.color: Couleur
+carrier.fields.url_tracking_pattern: Modèle de suivi d'URL
+
+# Account carrier
+account_carrier.name: Expédition du compte
+account_carrier.name.plural: Expéditions du compte
+
+# Shipment
+shipping.name: Expédition
+shipping.name.plural: Expédition
+shipping.fields.tracking_number: Numéro de suivi
+shipping.fields.expedited_at: Expédié le

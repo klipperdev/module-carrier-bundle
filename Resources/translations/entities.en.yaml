@@ -1,0 +1,15 @@
+# Carrier
+carrier.name: Carrier
+carrier.name.plural: Carriers
+carrier.fields.color: Color
+carrier.fields.url_tracking_pattern: URL tracking pattern
+
+# Account carrier
+account_carrier.name: Account carrier
+account_carrier.name.plural: Account carriers
+
+# Shipment
+shipping.name: Shipment
+shipping.name.plural: Shipments
+shipping.fields.tracking_number: Tracking number
+shipping.fields.expedited_at: Expedited at
