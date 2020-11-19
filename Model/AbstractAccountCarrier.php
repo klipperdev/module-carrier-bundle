@@ -44,6 +44,7 @@ abstract class AbstractAccountCarrier implements AccountCarrierInterface
      *
      * @Serializer\Type("AssociationId")
      * @Serializer\Expose
+     * @Serializer\MaxDepth(1)
      */
     protected ?AccountInterface $account = null;
 
@@ -56,6 +57,7 @@ abstract class AbstractAccountCarrier implements AccountCarrierInterface
      * @Assert\NotBlank
      *
      * @Serializer\Expose
+     * @Serializer\MaxDepth(1)
      */
     protected ?CarrierInterface $carrier = null;
 

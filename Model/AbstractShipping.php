@@ -41,6 +41,7 @@ abstract class AbstractShipping implements ShippingInterface
      * @Assert\NotBlank
      *
      * @Serializer\Expose
+     * @Serializer\MaxDepth(1)
      */
     protected ?CarrierInterface $carrier = null;
 
