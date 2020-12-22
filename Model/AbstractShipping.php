@@ -50,7 +50,6 @@ abstract class AbstractShipping implements ShippingInterface
      *
      * @Assert\Type(type="string")
      * @Assert\Length(min=0, max=255)
-     * @Assert\NotBlank
      *
      * @Serializer\Expose
      */
