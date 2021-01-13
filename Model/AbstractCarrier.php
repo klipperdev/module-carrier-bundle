@@ -28,10 +28,10 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 abstract class AbstractCarrier implements CarrierInterface
 {
+    use ImagePathTrait;
     use NameableTrait;
     use OrganizationalRequiredTrait;
     use TimestampableTrait;
-    use ImagePathTrait;
 
     /**
      * @ORM\Column(type="string", length=9, nullable=true)
