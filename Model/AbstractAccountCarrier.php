@@ -36,8 +36,7 @@ abstract class AbstractAccountCarrier implements AccountCarrierInterface
 
     /**
      * @ORM\ManyToOne(
-     *     targetEntity="Klipper\Module\PartnerBundle\Model\AccountInterface",
-     *     fetch="EXTRA_LAZY"
+     *     targetEntity="Klipper\Module\PartnerBundle\Model\AccountInterface"
      * )
      *
      * @Assert\NotNull
@@ -50,8 +49,7 @@ abstract class AbstractAccountCarrier implements AccountCarrierInterface
 
     /**
      * @ORM\ManyToOne(
-     *     targetEntity="Klipper\Module\CarrierBundle\Model\CarrierInterface",
-     *     fetch="EAGER"
+     *     targetEntity="Klipper\Module\CarrierBundle\Model\CarrierInterface"
      * )
      *
      * @Assert\NotBlank

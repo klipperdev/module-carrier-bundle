@@ -34,8 +34,7 @@ abstract class AbstractShipping implements ShippingInterface
 
     /**
      * @ORM\ManyToOne(
-     *     targetEntity="Klipper\Module\CarrierBundle\Model\CarrierInterface",
-     *     fetch="EAGER"
+     *     targetEntity="Klipper\Module\CarrierBundle\Model\CarrierInterface"
      * )
      *
      * @Assert\NotBlank
